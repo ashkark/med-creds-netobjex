@@ -1,0 +1,10 @@
+$imgpath: "/assets/images/images";
+$iconspath: "/assets/images/icons";
+
+.background-style {
+    background-image: url(#{$imgpath}/bg-image-shape.png);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

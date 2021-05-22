@@ -1,0 +1,32 @@
+$imgpath: "/assets/images/images";
+$iconspath: "/assets/images/icons";
+@import "src/theme/style-variables";
+@import "src/theme/font";
+@import "~bootstrap/scss/bootstrap";
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    font: normal normal 450 15px/60px SFUI_Text;
+    color: $muted;
+    background-color: $white;
+    padding: 0px 40px;
+    box-shadow: -2px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 990px) {
+    .footer {
+        position: unset;
+        padding: 0px 15px;
+        font: normal normal 450 15px/45px SFUI_Text;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .footer {
+        font: normal normal 450 12px/40px SFUI_Text;
+    }
+}

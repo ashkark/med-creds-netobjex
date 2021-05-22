@@ -1,0 +1,65 @@
+$imgpath: "/assets/images/images";
+$iconspath: "/assets/images/icons";
+@import "src/theme/style-variables";
+@import "src/theme/font";
+@import "~bootstrap/scss/bootstrap";
+
+.app-logo {
+    height: 58px;
+    width: 133px;
+    margin: 10px 100px 10px 40px;
+}
+
+.active {
+    border-bottom: 3px solid #70cca8;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 60px;
+    .user-profile-icon {
+        margin: 0px 10px;
+        img {
+            height: 47px;
+            width: 47px;
+        }
+    }
+    .user-profile-name {
+        font: normal normal 500 20px/25px SFUI_Text;
+        color: $white;
+    }
+}
+
+.navbar-collapse {
+    text-align: right;
+    padding: 0px 17px;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 990px) {
+    .active {
+        border-bottom: 0px solid #70cca8;
+    }
+    .app-logo {
+        height: 33px;
+        width: 79px;
+        margin: 10px 0px 10px 15px;
+    }
+    .user-profile {
+        margin: 0px;
+        .user-profile-icon {
+            img {
+                height: 35px;
+                width: 35px;
+            }
+        }
+        .user-profile-name {
+            font: normal normal 500 15px/15px SFUI_Text;
+            color: $white;
+        }
+    }
+}

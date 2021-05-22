@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">
+        <img src="/assets/images/icons/app-logo.png" alt="no preview" class="app-logo">
+    </a>
+    <div class="navbar-text d-block d-lg-none">
+        <div class="user-profile">
+            <div class="user-profile-icon">
+                <img src="/assets/images/icons/user-profile.png" alt="no preview">
+            </div>
+            <div class="user-profile-name ml-4 my-auto">Ericnel</div>
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" (click)="navbarCollapsed = !navbarCollapsed"
+        [attr.aria-expanded]="!navbarCollapsed" aria-controls="navbarContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flext justify-content-between" [ngbCollapse]="navbarCollapsed"
+        id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-2">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLinkActive]="['active']"
+                    [routerLink]="[routes.user.credentialOrganization]">Credentialing Organizations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Hospitals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Reports</a>
+            </li>
+        </ul>
+        <div class="navbar-text d-none d-lg-block">
+            <div class="user-profile">
+                <div class="user-profile-icon">
+                    <img src="/assets/images/icons/user-profile.png" alt="no preview">
+                </div>
+                <div class="user-profile-name ml-4 my-auto">Ericnel</div>
+            </div>
+        </div>
+    </div>
+</nav>
