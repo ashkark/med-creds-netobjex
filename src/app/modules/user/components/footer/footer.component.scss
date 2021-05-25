@@ -2,11 +2,11 @@ $imgpath: "/assets/images/images";
 $iconspath: "/assets/images/icons";
 @import "src/theme/style-variables";
 @import "src/theme/font";
-@import "~bootstrap/scss/bootstrap";
 
 .footer {
     position: fixed;
     bottom: 0;
+    z-index: 999;
     width: 100vw;
     display: flex;
     justify-content: space-between;
